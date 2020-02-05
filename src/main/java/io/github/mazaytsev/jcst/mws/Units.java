@@ -20,6 +20,7 @@ public class Units {
         this.geometryUnit=builder.nestedGeomUnit;
         this.temperatureUnit=builder.nestedTempUnit;
         this.timeUnit=builder.nestedTimeUnit;
+        execute();
     }
 
     public static class Builder{
@@ -58,7 +59,7 @@ public class Units {
         }
     }
 
-    public void execute(){
+    private void execute() {
         if (projectInstance ==null){
             return;
         }
